@@ -1,0 +1,22 @@
+.features {
+    width: 500px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0px;
+        }
+    }
+
+    &__content {
+        margin-left: 12px;
+        line-height: 18px;
+    }
+}

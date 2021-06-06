@@ -1,0 +1,19 @@
+.menu {
+    font-family: "alegreya", Helvetica, sans-serif;
+    font-size: 400;
+    font-size: 18px;
+    margin-left: 38px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        margin-right: 27px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

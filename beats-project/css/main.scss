@@ -1,0 +1,17 @@
+/* Layout */
+@import "./layout/base";
+
+/* header */
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/contacts";
+
+/* presentation */
+@import "./blocks/presentation";
+@import "./blocks/button";
+@import "./blocks/features";
+
+/* description */
+@import "./blocks/description";
+/* reviews */
+@import "./blocks/reviews";

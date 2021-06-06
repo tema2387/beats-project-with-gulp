@@ -1,0 +1,41 @@
+.presentation {
+    padding-top: 86px;
+    background: #F5F5F5;
+    padding-bottom: 86px;
+
+    &__container {
+        width: 913px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        margin-bottom: 22px;
+        width: 400px;
+    }
+
+    &__subtitle {
+        font-family: "alegreya", Helvetica, sans-serif;
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 54px;
+        width: 340px;
+    }
+
+    &__button {
+        margin-bottom: 88px;
+    }
+
+    &__photo {
+        position: absolute;
+        right: 0%;
+        bottom: -2%;
+    }
+}

@@ -39,7 +39,7 @@
                 <section class="presentation">
                     <div class="presentation__container">
                         <div class="presentation__content">
-                            <h1 class="presentation__title">Беспроводные наушники Beats Solo 3</h1>
+                            <h1 class="section--title presentation__title">Беспроводные наушники Beats Solo 3</h1>
                             <p class="presentation__subtitle">Встречайте новую версию наушников
                                 из линейки Powerbeats.</p>
                             <div class="presentation__button">
@@ -79,7 +79,7 @@
                 <section class="description">
                     <div class="description__container">
                         <div class="description__content">
-                            <h1 class="description__content-title">почему beats solo 3?</h1>
+                            <h1 class="section--title description__content-title">почему beats solo 3?</h1>
                             <p class="description__content-subtitle">Процессор W1 работает невероятно эффективно и
                                 позволяет легко подключать наушники к различным устройствам Apple.
                             </p>
@@ -130,7 +130,7 @@
                 </section>
                 <section class="reviews">
                     <div class="reviews__container">
-                        <h1 class="reviews__title">отзывы</h1>
+                        <h1 class="section--title reviews__title">отзывы</h1>
                         <div class="reviews__content">
                             <img src="./img/reviews/billy.png" alt="billy" class="reviews__content-img">
                             <div class="reviews__content-description">
@@ -145,7 +145,7 @@
                         </div>
                         <div class="reviews__switch">
                             <ul class="reviews__switch-list">
-                                <li class="reviews__switch-item">
+                                <li class="reviews__switch-item reviews__switch-item--active">
                                     <a href="" class="reviews__switch-link">
                                         <img src="./img/reviews/billy.png" alt="billy" class="reviews__switch-img">
                                     </a>
@@ -166,73 +166,73 @@
                 </section>
                 <section class="order">
                     <div class="order__container">
-                        <h1 class="order__title">закажите доставку</h1>
+                        <h1 class="section--title order__title">закажите доставку</h1>
                         <form class="form">
                             <div class="form__main">
                                 <div class="form__row">
-                                    <div class="form__name">
+                                    <label class="form__label">
                                         <div class="form__title">Имя</div>
                                         <input type="text" class="form__name-input input--height input--border">
-                                    </div>
-                                    <div class="form__name">
+                                    </label>
+                                    <label class="form__label">
                                         <div class="form__title">Телефон</div>
                                         <input type="text" class="form__name-input input--height input--border">
-                                    </div>
+                                    </label>
                                 </div>
                                 <div class="form__row">
-                                    <div class="form__street">
+                                    <label class="form__label">
                                         <div class="form__title">Улица</div>
                                         <input type="text" class="form__street-input input--height input--border">
-                                    </div>
+                                    </label>
                                 </div>
                                 <div class="form__row">
-                                    <div class="form__house">
+                                    <label class="form__label">
                                         <div class="form__title">Дом</div>
                                         <input type="text" class="form__house-input input--height input--border">
-                                    </div>
-                                    <div class="form__house">
+                                    </label>
+                                    <label class="form__label">
                                         <div class="form__title">Корпус</div>
                                         <input type="text" class="form__house-input input--height input--border">
-                                    </div>
-                                    <div class="form__house">
+                                    </label>
+                                    <label class="form__label">
                                         <div class="form__title">Квартира</div>
                                         <input type="text" class="form__house-input input--height input--border">
-                                    </div>
-                                    <div class="form__house">
+                                    </label>
+                                    <label class="form__label">
                                         <div class="form__title">Этаж</div>
                                         <input type="text" class="form__house-input input--height input--border">
-                                    </div>
+                                    </label>
                                 </div>
                             </div>
                             <div class="form__extra">
                                 <div class="form__textarea">
-                                    <div class="form__title">Комментарий</div>
-                                    <textarea class="textarea input--border"></textarea>
+                                    <label class="form__label">
+                                        <div class="form__title">Комментарий</div>
+                                        <textarea class="textarea input--border"></textarea>
+                                    </label>
                                 </div>
-                                <div class="form__choise">
-                                    <div class="form__radio">
-                                        <ul class="form__radio-list">
-                                            <li class="form__radio-item">
-                                                <input type="radio" id="radio1" class="form__radio-input">
-                                                <label for="radio1"></label>
-                                                <div class="form__radio-title">Потребуется сдача</div>
-                                            </li>
-                                            <li class="form__radio-item">
-                                                <input type="radio" id="radio2" class="form__radio-input">
-                                                <label for="radio2"></label>
-                                                <div class="form__radio-title">Оплата картой</div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="form__checkbox">
-                                        <ul class="form__checkbox-list">
-                                            <li class="form__checkbox-item">
-                                                <input type="checkbox" id="check1" class="form__checkbox-input">
-                                                <label for="check1"></label>
-                                                <div class="form__checkbox-title">Не перезванивать</div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div class="form__radio">
+                                    <ul class="form__radio-list">
+                                        <li class="form__radio-item">
+                                            <input type="radio" id="radio1" class="form__radio-input">
+                                            <label for="radio1"></label>
+                                            <div class="form__radio-title">Потребуется сдача</div>
+                                        </li>
+                                        <li class="form__radio-item">
+                                            <input type="radio" id="radio2" class="form__radio-input">
+                                            <label for="radio2"></label>
+                                            <div class="form__radio-title">Оплата картой</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form__checkbox">
+                                    <ul class="form__checkbox-list">
+                                        <li class="form__checkbox-item">
+                                            <input type="checkbox" id="check1" class="form__checkbox-input">
+                                            <label for="check1"></label>
+                                            <div class="form__checkbox-title">Не перезванивать</div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="form__button">
                                     <button type="submit" class="button button--size">Заказать</button>
@@ -246,55 +246,46 @@
         </div>
         <footer class="footer">
         </footer>
-        <div class="pagination">
+        <nav class="pagination">
             <ul class="pagination__list">
-                <li class="pagination__item">
-                    <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
+                <li class="pagination__item pagination__item--active">
+                    <a href="" class="pagination__link ">
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
                 <li class="pagination__item">
                     <a href="" class="pagination__link">
-                        <div class="pagination__link-one"></div>
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
 </body>
 

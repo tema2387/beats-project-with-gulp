@@ -11,12 +11,7 @@
         position: relative;
     }
 
-
     &__title {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 52px;
         margin-bottom: 22px;
         width: 400px;
     }
@@ -38,4 +33,11 @@
         right: 0%;
         bottom: -2%;
     }
+}
+
+.section--title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
 }

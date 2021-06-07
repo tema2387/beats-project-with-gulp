@@ -1,5 +1,6 @@
 .order {
     background: #181818;
+    margin-top: 63px;
 
     &__container {
         width: 940px;
@@ -7,9 +8,6 @@
     }
 
     &__title {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 48px;
         text-align: center;
         color: #fff;
         padding-top: 68px;

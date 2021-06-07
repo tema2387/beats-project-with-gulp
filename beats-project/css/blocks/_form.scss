@@ -1,0 +1,157 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 11px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__name-input {
+        width: 222px;
+    }
+
+    &__street-input {
+        width: 460px;
+    }
+
+    &__house-input {
+        width: 105px;
+    }
+
+    .input--height {
+        height: 58px;
+    }
+
+    .input--border {
+        border: 3px solid transparent;
+        border-radius: 4px;
+
+        &:focus {
+            border: 3px solid #E01F3D;
+        }
+    }
+
+    .textarea {
+        width: 450px;
+        height: 150px;
+        resize: none;
+        margin-bottom: 38px;
+    }
+
+    &__checkbox-input {
+        border-radius: 2px;
+    }
+
+    &__radio {
+        margin-bottom: 20px;
+
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        &-title {
+            margin-left: 10px;
+        }
+    }
+
+    &__checkbox {
+        margin-bottom: 20px;
+
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        &-title {
+            margin-left: 10px;
+        }
+    }
+
+    &__choise {
+        margin-bottom: 48px;
+    }
+
+    .button--size {
+        padding: 21px 42px;
+    }
+
+    .button--reset {
+        padding: 0px;
+        background: none;
+        font-size: 16px;
+        text-transform: inherit;
+        font-weight: 400;
+        margin-left: 15px;
+    }
+}
+
+.form__radio-item input[type="radio"] {
+    display: none;
+}
+
+.form__radio-item label:before {
+    content: " ";
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+.form__radio-item input:checked+label:before {
+    background: url(../img/form/ellipse2.png) center center no-repeat;
+    background-color: #FFF;
+}
+
+.form__radio-item input:disabled+label:before {
+    background: #fff;
+}
+
+.form__checkbox-item input[type="checkbox"] {
+    display: none;
+}
+
+.form__checkbox-item label:before {
+    content: " ";
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: #FFF;
+}
+
+.form__checkbox-item input:checked+label:before {
+    background: url(../img/form/Vector1.png) center center no-repeat;
+    background-color: #FFF;
+}
+
+.form__checkbox-item input:disabled+label:before {
+    background: #FFF;
+}

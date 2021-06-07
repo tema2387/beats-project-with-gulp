@@ -67,6 +67,12 @@ textarea {
 
 section {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* header */
@@ -125,9 +131,7 @@ section {
 
 /* presentation */
 .presentation {
-  padding-top: 86px;
   background: #F5F5F5;
-  padding-bottom: 86px;
 }
 .presentation__container {
   width: 913px;
@@ -160,7 +164,7 @@ section {
   bottom: -2%;
 }
 
-.section--title {
+.title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 48px;
@@ -202,9 +206,6 @@ section {
 }
 
 /* description */
-.description {
-  margin-top: 100px;
-}
 .description__container {
   width: 913px;
   margin: 0 auto;
@@ -283,9 +284,6 @@ section {
 }
 
 /* reviews */
-.reviews {
-  margin-top: 64px;
-}
 .reviews__container {
   width: 913px;
   margin: 0 auto;
@@ -355,7 +353,6 @@ section {
 /* order */
 .order {
   background: #181818;
-  margin-top: 63px;
 }
 .order__container {
   width: 940px;
@@ -527,11 +524,14 @@ section {
 /* pagination */
 .pagination {
   position: fixed;
-  top: 25%;
-  right: 23%;
+  top: 30%;
+  right: 22%;
 }
 .pagination .pagination__item {
   margin-bottom: 5px;
+}
+.pagination .pagination__item:last-child {
+  margin-bottom: 0px;
 }
 .pagination .pagination__item--active .pagination__link {
   border-color: red;

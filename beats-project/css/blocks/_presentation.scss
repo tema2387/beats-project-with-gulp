@@ -1,7 +1,5 @@
 .presentation {
-    padding-top: 86px;
     background: #F5F5F5;
-    padding-bottom: 86px;
 
     &__container {
         width: 913px;
@@ -35,7 +33,7 @@
     }
 }
 
-.section--title {
+.title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 48px;

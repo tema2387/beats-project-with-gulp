@@ -1,10 +1,14 @@
 .pagination {
     position: fixed;
-    top: 25%;
-    right: 23%;
+    top: 30%;
+    right: 22%;
 
     .pagination__item {
         margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
 
         &--active {
             .pagination__link {

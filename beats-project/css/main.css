@@ -131,7 +131,9 @@ section {
 
 /* presentation */
 .presentation {
+  padding-top: 86px;
   background: #F5F5F5;
+  padding-bottom: 86px;
 }
 .presentation__container {
   width: 913px;
@@ -206,6 +208,9 @@ section {
 }
 
 /* description */
+.description {
+  margin-top: 100px;
+}
 .description__container {
   width: 913px;
   margin: 0 auto;
@@ -284,6 +289,9 @@ section {
 }
 
 /* reviews */
+.reviews {
+  margin-top: 64px;
+}
 .reviews__container {
   width: 913px;
   margin: 0 auto;
@@ -353,6 +361,7 @@ section {
 /* order */
 .order {
   background: #181818;
+  margin-top: 64px;
 }
 .order__container {
   width: 940px;
@@ -375,6 +384,12 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #fff;
+}
+.form__label--position {
+  margin-right: 25px;
+}
+.form__label--position:last-child {
+  margin-right: 0px;
 }
 .form__row {
   display: -webkit-box;
@@ -526,8 +541,8 @@ section {
 /* pagination */
 .pagination {
   position: fixed;
-  top: 30%;
-  right: 22%;
+  top: 50%;
+  right: 5%;
 }
 .pagination .pagination__item {
   margin-bottom: 5px;

@@ -4,6 +4,14 @@
     flex-wrap: wrap;
     color: #fff;
 
+    &__label--position {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;

@@ -1,10 +1,30 @@
 .presentation {
-    padding-top: 86px;
+    padding-top: rem(86px);
     background: #F5F5F5;
-    padding-bottom: 86px;
+    padding-bottom: rem(86px);
+
+    &__content {
+
+        @include tablets {
+            width: 100%;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &:before {
+                content: url(../img/presentation768/Ellipse5.png);
+                margin-bottom: rem(64px);
+            }
+
+        }
+    }
 
     &__container {
-        width: 913px;
+        width: 95%;
+        max-width: $containerwidth;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -12,32 +32,69 @@
     }
 
     &__title {
-        margin-bottom: 22px;
-        width: 400px;
+        margin-bottom: rem(22px);
+        max-width: rem(400px);
+
+        @include phones {
+            padding-left: 40px;
+            padding-right: 40px;
+            line-height: 1;
+        }
+
+
+        @include tablets {
+            max-width: rem(650px);
+            margin-bottom: rem(5px);
+        }
+
+        @include phones {
+            margin-bottom: 14px;
+        }
     }
 
     &__subtitle {
         font-family: "alegreya", Helvetica, sans-serif;
-        font-size: 21px;
-        line-height: 25px;
-        margin-bottom: 54px;
-        width: 340px;
+        font-size: rem(21px);
+        line-height: rem(25px);
+        margin-bottom: rem(54px);
+        max-width: rem(340px);
+
+        @include tablets {
+            margin-bottom: rem(44px);
+        }
+
+        @include phones {
+            margin-bottom: rem(47px);
+        }
     }
 
     &__button {
-        margin-bottom: 88px;
+        margin-bottom: rem(88px);
+
+        @include tablets {
+            margin-bottom: rem(0px);
+        }
+
+        @include phones {
+            margin-bottom: rem(0px);
+        }
     }
 
     &__photo {
-        position: absolute;
-        right: 0%;
-        bottom: -2%;
+
+        @include tablets {
+            display: none;
+        }
     }
 }
 
 .title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
+
+    @include phones {
+        font-size: 32px;
+    }
 }

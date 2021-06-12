@@ -1,77 +1,98 @@
 .form {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     color: #fff;
 
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__label-item {
-        margin-right: 25px;
+        margin-right: rem(25px);
 
         &:last-child {
-            margin-right: 0px;
+            margin-right: rem(0px);
         }
     }
 
     &__row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 11px;
+        margin-bottom: rem(11px);
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: rem(0px);
         }
     }
 
     &__name-input {
-        width: 222px;
+        width: rem(222px);
     }
 
     &__street-input {
-        width: 460px;
+        width: rem(460px);
     }
 
     &__house-input {
-        width: 105px;
+        width: rem(105px);
     }
 
     &__textarea {
-        margin-bottom: 38px;
+        margin-bottom: rem(38px);
+
+        @include tablets {
+            margin-top: rem(16px);
+        }
     }
 
+
     .textarea {
-        width: 450px;
-        height: 150px;
+        width: rem(460px);
+        height: rem(150px);
         resize: none;
     }
 
     &__checkbox-input {
-        border-radius: 2px;
+        border-radius: rem(2px);
     }
 
     &__radio {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
+
+        @include phones {
+            display: flex;
+            justify-content: center;
+        }
 
         &-list {
             display: flex;
         }
 
         &-item {
-            margin-right: 16px;
+            margin-right: rem(16px);
             display: flex;
             align-items: center;
 
             &:last-child {
-                margin-right: 0px;
+                margin-right: rem(0px);
             }
         }
 
         &-title {
-            margin-left: 10px;
+            margin-left: rem(10px);
         }
     }
 
     &__checkbox {
-        margin-bottom: 48px;
+        margin-bottom: rem(48px);
+
+        @include phones {
+            display: flex;
+            justify-content: center;
+        }
 
         &-list {
             display: flex;
@@ -80,43 +101,54 @@
         &-item {
             display: flex;
             align-items: center;
-            margin-right: 16px;
+            margin-right: rem(16px);
 
             &:last-child {
-                margin-right: 0px;
+                margin-right: rem(0px);
             }
         }
 
         &-title {
-            margin-left: 10px;
+            margin-left: rem(10px);
+        }
+    }
+
+    &__button {
+        @include tablets {
+            display: flex;
+            justify-content: center;
         }
     }
 }
 
 .input--height {
-    height: 58px;
+    height: rem(58px);
+
+    @include tablets {
+        height: rem(36px);
+    }
 }
 
 .input--border {
-    border: 3px solid transparent;
-    border-radius: 4px;
+    border: rem(3px) solid transparent;
+    border-radius: rem(4px);
 
     &:focus {
-        border: 3px solid #E01F3D;
+        border: rem(3px) solid #E01F3D;
     }
 }
 
 .button--size {
-    padding: 21px 42px;
+    padding: rem(21px) rem(42px);
 }
 
 .button--reset {
-    padding: 0px;
+    padding: rem(0px);
     background: none;
-    font-size: 16px;
+    font-size: rem(16px);
     text-transform: inherit;
     font-weight: 400;
-    margin-left: 15px;
+    margin-left: rem(15px);
 }
 
 .form__label input[type="radio"] {
@@ -128,8 +160,8 @@
     content: " ";
     display: block;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     background: #FFF;
     border-radius: 50%;
 }
@@ -151,8 +183,8 @@
     content: " ";
     display: block;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     background: #FFF;
 }
 

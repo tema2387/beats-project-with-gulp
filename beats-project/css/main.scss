@@ -1,3 +1,14 @@
+// width
+$containerwidth: 940px;
+$basefontsize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//function
+@import "./layout/media";
+
 /* Layout */
 @import "./layout/base";
 
@@ -5,6 +16,8 @@
 @import "./blocks/header";
 @import "./blocks/menu";
 @import "./blocks/contacts";
+/* hamburger */
+@import "./blocks/hamburger";
 
 /* presentation */
 @import "./blocks/presentation";
@@ -18,5 +31,10 @@
 /* order */
 @import "./blocks/order";
 @import "./blocks/form";
+/* map */
+@import "./blocks/map";
+/* footer */
+@import "./blocks/footer";
+@import "./blocks/socials";
 /* pagination */
 @import "./blocks/pagination";

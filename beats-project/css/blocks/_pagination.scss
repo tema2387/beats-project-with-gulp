@@ -3,11 +3,15 @@
     top: 50%;
     right: 5%;
 
+    @include tablets {
+        display: none;
+    }
+
     .pagination__item {
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
 
         &:last-child {
-            margin-bottom: 0px;
+            margin-bottom: rem(0px);
         }
 
         &--active {
@@ -25,11 +29,11 @@
     }
 
     .pagination__link {
-        width: 18px;
-        height: 18px;
+        width: rem(18px);
+        height: rem(18px);
         display: block;
         background: none;
-        border: 1px solid transparent;
+        border: rem(1px) solid transparent;
         border-radius: 50%;
         position: relative;
         opacity: 0.6;
@@ -37,8 +41,8 @@
         &:before {
             content: "";
             display: block;
-            width: 7px;
-            height: 7px;
+            width: rem(7px);
+            height: rem(7px);
             background: #292929;
             border-radius: 50%;
             position: absolute;

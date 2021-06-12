@@ -1,17 +1,70 @@
 .contacts {
-    font-size: 18px;
+    font-size: rem(18px);
     position: relative;
     line-height: 1;
-    margin-left: 68px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
 
-    &:before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 15px;
-        width: 14px;
-        top: 1px;
-        left: -20px;
-        background: url(../img/number/number.svg);
+    &__description {
+        font-style: normal;
+        margin-bottom: rem(5px);
+        font-size: rem(18px);
+
+        @include tablets {
+            font-size: rem(21px);
+        }
+
+        @include phones {
+            font-size: rem(18px);
+            color: black;
+        }
+    }
+
+
+    &__phone {
+        margin-left: rem(6px);
+    }
+
+    &__phone--color {
+
+        @include tablets {
+            color: #E01F3D;
+        }
+
+        @include phones {
+            color: #292929;
+        }
+    }
+}
+
+.contacts--header {
+    @include tablets {
+        display: none;
+    }
+}
+
+.contacts__icon--footer {
+    margin-left: 16px;
+}
+
+.contacts--position {
+    @include phones {
+        margin-top: rem(12px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contacts__img {
+    fill: #292929;
+
+    @include tablets {
+        fill: red;
+    }
+
+    @include phones {
+        fill: #292929;
     }
 }

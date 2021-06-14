@@ -962,12 +962,11 @@ section {
   position: absolute;
   background: #fff;
   width: 100%;
-  top: 91%;
-  height: 100vh;
+  top: 92%;
 }
 @media screen and (max-width: 480px) {
   .footer {
-    top: 86%;
+    top: 88%;
   }
 }
 .footer__container {

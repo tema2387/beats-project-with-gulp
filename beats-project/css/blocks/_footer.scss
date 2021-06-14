@@ -3,11 +3,10 @@
     position: absolute;
     background: #fff;
     width: 100%;
-    top: 91%;
-    height: 100vh;
+    top: 92%;
 
     @include phones {
-        top: 86%;
+        top: 88%;
     }
 
     &__container {

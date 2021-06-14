@@ -3,6 +3,18 @@
     justify-content: space-between;
     color: #fff;
 
+    &__main {
+
+        @include tablets {
+            margin-top: rem(16px);
+
+            &:first-child {
+                margin-top: rem(0px);
+            }
+        }
+
+    }
+
     @include tablets {
         display: flex;
         flex-direction: column;

@@ -63,8 +63,8 @@
             }
 
             @include phones {
-                width: rem(35px);
-                height: rem(35px);
+                width: rem(33px);
+                height: rem(33px);
             }
         }
     }
@@ -100,8 +100,8 @@
             background: url(../img/footer/css_sprites.png) -10px -10px;
 
             @include tablets {
-                width: rem(32px);
-                height: rem(32px);
+                width: rem(35px);
+                height: rem(35px);
             }
 
             @include phones {

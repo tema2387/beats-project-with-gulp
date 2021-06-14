@@ -1,5 +1,9 @@
 .footer {
     padding: rem(20px) rem(0px) rem(20px) rem(0px);
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 100%;
 
     &__container {
         width: 95%;

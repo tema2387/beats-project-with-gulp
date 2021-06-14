@@ -37,20 +37,17 @@
         @include tablets {
             text-align: center;
             margin-left: rem(0px);
+            margin-top: rem(32px);
+        }
+
+        @include phones {
+            color: #000000;
+            margin-top: rem(21px);
         }
 
         &-title {
             font-size: rem(24px);
             font-weight: 700;
-
-            @include tablets {
-                margin-top: rem(32px);
-            }
-
-            @include phones {
-                color: #000000;
-                margin-top: rem(21px);
-            }
         }
 
         &-subtitle {

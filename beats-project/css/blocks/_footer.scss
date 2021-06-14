@@ -4,9 +4,10 @@
     background: #fff;
     width: 100%;
     top: 92%;
+    height: 100vh;
 
     @include phones {
-        top: 89%;
+        top: 87%;
     }
 
     &__container {

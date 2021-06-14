@@ -37,6 +37,13 @@
             color: #292929;
         }
     }
+
+    &__number {
+
+        @include phones {
+            margin-top: 12px;
+        }
+    }
 }
 
 .contacts--header {

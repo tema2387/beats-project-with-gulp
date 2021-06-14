@@ -186,6 +186,11 @@ section {
     color: #292929;
   }
 }
+@media screen and (max-width: 480px) {
+  .contacts__number {
+    margin-top: 12px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .contacts--header {
@@ -958,10 +963,11 @@ section {
   background: #fff;
   width: 100%;
   top: 92%;
+  height: 100vh;
 }
 @media screen and (max-width: 480px) {
   .footer {
-    top: 89%;
+    top: 87%;
   }
 }
 .footer__container {

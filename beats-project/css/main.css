@@ -1038,8 +1038,8 @@ section {
 }
 @media screen and (max-width: 480px) {
   .socials__facebook:before {
-    width: 2.0625rem;
-    height: 2.0625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
   }
 }
 .socials__instagram:before {
@@ -1070,8 +1070,8 @@ section {
 }
 @media screen and (max-width: 768px) {
   .socials__telegram:before {
-    width: 2.1875rem;
-    height: 2.1875rem;
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media screen and (max-width: 480px) {

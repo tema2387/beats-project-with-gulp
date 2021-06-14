@@ -3,7 +3,11 @@
     position: absolute;
     background: #fff;
     width: 100%;
-    top: 91%;
+    top: 92%;
+
+    @include phones {
+        top: 89%;
+    }
 
     &__container {
         width: 95%;

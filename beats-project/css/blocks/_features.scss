@@ -22,10 +22,15 @@
         }
     }
 
-    &__photo-img {
-        width: rem(50px);
-        height: rem(35px);
+    &__photo {
+        flex-shrink: 0;
+
+        &-img {
+            width: rem(50px);
+            height: rem(35px);
+        }
     }
+
 
     &__content {
         margin-left: rem(12px);

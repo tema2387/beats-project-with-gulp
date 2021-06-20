@@ -5,6 +5,17 @@
 
     @include tablets {
         display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background: #313131;
+        margin: 0px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        z-index: 10000;
     }
 
     &__list {
@@ -12,10 +23,19 @@
         align-items: center;
         flex-wrap: wrap;
         justify-content: center;
+
+        @include tablets {
+            flex-direction: column;
+        }
     }
 
     &__item {
         margin-right: rem(27px);
+
+        @include tablets {
+            margin-right: rem(0px);
+            margin-top: rem(10px);
+        }
 
         &:last-child {
             margin-right: rem(0px);
@@ -24,5 +44,26 @@
 
     &__link {
         white-space: nowrap;
+
+        @include tablets {
+            color: white;
+            font-size: 36px;
+        }
+
+        @include phones {
+            color: white;
+            font-size: 36px;
+        }
+    }
+}
+
+.close-button {
+    display: none;
+
+    @include tablets {
+        position: fixed;
+        top: 4%;
+        right: 2%;
+        z-index: 10000;
     }
 }

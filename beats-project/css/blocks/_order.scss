@@ -1,6 +1,7 @@
 .order {
     background: #181818;
-    margin-top: rem(64px);
+    padding-top: rem(64px);
+    padding-bottom: rem(64px);
 
     &__container {
         width: 95%;
@@ -11,7 +12,6 @@
     &__title {
         text-align: center;
         color: #fff;
-        padding-top: rem(68px);
-        padding-bottom: rem(58px);
+        margin-bottom: rem(58px);
     }
 }

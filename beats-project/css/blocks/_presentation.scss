@@ -81,6 +81,9 @@
     }
 
     &__photo {
+        position: absolute;
+        left: 50%;
+        flex-shrink: 0;
 
         @include tablets {
             display: none;

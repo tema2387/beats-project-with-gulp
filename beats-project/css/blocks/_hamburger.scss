@@ -9,6 +9,10 @@
     right: 2%;
 
     @include tablets {
+        z-index: 10000;
+    }
+
+    @include tablets {
         display: inline-flex;
     }
 

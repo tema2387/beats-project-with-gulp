@@ -161,7 +161,7 @@
         &-feature {
             position: relative;
 
-            &-icon-bluetooth:before {
+            &-bluetooth:before {
                 content: "";
                 position: absolute;
                 width: 24px;
@@ -170,7 +170,7 @@
                 left: -50%;
             }
 
-            &-icon-road:before {
+            &-road:before {
                 content: "";
                 position: absolute;
                 width: 24px;
@@ -179,7 +179,7 @@
                 left: -50%;
             }
 
-            &-icon-power:before {
+            &-power:before {
                 content: "";
                 position: absolute;
                 width: 24px;
@@ -188,7 +188,7 @@
                 left: -60%;
             }
 
-            &-icon-wreath:before {
+            &-wreath:before {
                 content: "";
                 position: absolute;
                 width: 24px;
@@ -197,7 +197,7 @@
                 left: -145%;
             }
 
-            &-icon-warranty:before {
+            &-warranty:before {
                 content: "";
                 position: absolute;
                 width: 24px;

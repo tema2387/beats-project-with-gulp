@@ -78,15 +78,12 @@ textarea {
   outline: none;
 }
 
-section {
+main {
   height: 100%;
 }
 
 .wrapper {
-  overflow: hidden;
-}
-
-.wrapper__content {
+  overflow-x: hidden;
   height: 100%;
 }
 
@@ -163,6 +160,9 @@ section {
   .menu__item {
     margin-right: 0rem;
     margin-top: 0.625rem;
+  }
+  .menu__item:first-child {
+    margin-top: 0rem;
   }
 }
 .menu__item:last-child {
@@ -821,7 +821,7 @@ section {
 .choose__attributes-feature {
   position: relative;
 }
-.choose__attributes-feature-icon-bluetooth:before {
+.choose__attributes-feature-bluetooth:before {
   content: "";
   position: absolute;
   width: 24px;
@@ -829,7 +829,7 @@ section {
   background: url(../img/choose/css_sprites.png) -10px -10px;
   left: -50%;
 }
-.choose__attributes-feature-icon-road:before {
+.choose__attributes-feature-road:before {
   content: "";
   position: absolute;
   width: 24px;
@@ -837,7 +837,7 @@ section {
   background: url(../img/choose/css_sprites.png) -98px -10px;
   left: -50%;
 }
-.choose__attributes-feature-icon-power:before {
+.choose__attributes-feature-power:before {
   content: "";
   position: absolute;
   width: 24px;
@@ -845,7 +845,7 @@ section {
   background: url(../img/choose/css_sprites.png) -10px -54px;
   left: -60%;
 }
-.choose__attributes-feature-icon-wreath:before {
+.choose__attributes-feature-wreath:before {
   content: "";
   position: absolute;
   width: 24px;
@@ -853,7 +853,7 @@ section {
   background: url(../img/choose/css_sprites.png) -54px -10px;
   left: -145%;
 }
-.choose__attributes-feature-icon-warranty:before {
+.choose__attributes-feature-warranty:before {
   content: "";
   position: absolute;
   width: 24px;

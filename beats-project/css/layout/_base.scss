@@ -74,14 +74,11 @@ textarea {
     outline: none;
 }
 
-section {
+main {
     height: 100%;
 }
 
 .wrapper {
-    overflow: hidden;
-}
-
-.wrapper__content {
+    overflow-x: hidden;
     height: 100%;
 }

@@ -35,6 +35,10 @@
         @include tablets {
             margin-right: rem(0px);
             margin-top: rem(10px);
+
+            &:first-child {
+                margin-top: rem(0px);
+            }
         }
 
         &:last-child {

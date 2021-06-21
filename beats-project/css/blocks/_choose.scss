@@ -84,11 +84,11 @@
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
         width: 43%;
 
         @include tablets {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             align-items: center;
             justify-content: center;

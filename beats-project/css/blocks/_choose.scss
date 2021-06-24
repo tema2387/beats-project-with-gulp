@@ -50,8 +50,8 @@
 
     &__item {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
         @include tablets {
             flex-direction: column;
@@ -85,6 +85,7 @@
 
     &__content {
         width: 43%;
+        margin-left: rem(20px);
 
         @include tablets {
             display: flex;
@@ -93,6 +94,7 @@
             align-items: center;
             justify-content: center;
             margin-top: rem(48px);
+            margin-left: rem(0px);
         }
 
         @include phones {

@@ -10,10 +10,22 @@
         position: relative;
     }
 
+    &__main {
+        margin-bottom: 0px;
+
+        .bx-wrapper {
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+            margin-bottom: 0px;
+        }
+    }
+
     &__control-left {
         position: absolute;
         top: 50%;
         left: -5%;
+        z-index: 10;
 
         @include tablets {
             top: 25%;
@@ -29,6 +41,7 @@
         position: absolute;
         top: 50%;
         right: -1%;
+        z-index: 10;
 
         @include tablets {
             top: 25%;
@@ -84,7 +97,7 @@
     }
 
     &__content {
-        width: 43%;
+        width: 44%;
         margin-left: rem(20px);
 
         @include tablets {
@@ -106,6 +119,7 @@
             margin-top: rem(25px);
             font-size: rem(36px);
             line-height: 1.1;
+            color: #292929;
 
             @include tablets {
                 font-size: rem(28px);

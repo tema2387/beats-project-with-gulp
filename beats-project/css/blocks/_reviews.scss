@@ -25,10 +25,27 @@
         }
 
         &-img {
-            width: rem(130px);
-            height: rem(130px);
+            @include tablets {
+                width: rem(130px);
+                height: rem(130px);
+            }
+
         }
 
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
 
@@ -94,19 +111,22 @@
             }
         }
 
-        &-item {
-            &--active {
-                .reviews__switch-img {
-                    border: rem(4px) solid #E01F3D;
-                }
-            }
-        }
-
         &-img {
             height: rem(74px);
             width: rem(74px);
             border-radius: 50%;
             border: rem(4px) solid transparent;
         }
+    }
+}
+
+.reviews__item--active {
+    position: relative;
+    opacity: 1;
+}
+
+.reviews__switch-item--active {
+    .reviews__switch-img {
+        border: rem(4px) solid #E01F3D;
     }
 }

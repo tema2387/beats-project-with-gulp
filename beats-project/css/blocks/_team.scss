@@ -93,6 +93,7 @@
 
         @include tablets {
             margin-top: rem(21px);
+            transition: height 0s;
         }
 
 
@@ -117,6 +118,10 @@
 }
 
 .active {
+
+    .team__description {
+        height: 100%;
+    }
 
     .team__photo {
         @include tablets {

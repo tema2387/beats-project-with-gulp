@@ -1,6 +1,6 @@
 $(document).ready(() => {
     $(".team__item").on("click", function(e) {
-        $(this).toggleClass("active").siblings().removeClass("active");
+        $(this).toggleClass("team__item--active").siblings().removeClass("team__item--active");
     })
 
 

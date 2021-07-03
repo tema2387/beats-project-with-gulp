@@ -485,6 +485,29 @@
                         </div>
                     </div>
                 </section>
+                <section class="player-section">
+                    <div class="player__container">
+                        <h2 class="title player__title">Как мы работаем</h2>
+                        <div class="player-section__container">
+                            <div class="player">
+                                <div class="player__wrapper">
+                                    <div id="yt-player" class="player__elem"></div>
+                                    <div class="player__splash"></div>
+                                </div>
+                                <div class="player__controls">
+                                    <button class="player__start"></button>
+                                    <div class="player__playback">
+                                        <button class="player__playback-button"></button>
+                                    </div>
+                                    <div class="player__duration">
+                                        <span class="player__duration-completed">0:00</span> :
+                                        <span class="player__duration-estimate">0:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="order">
                     <div class="order__container">
                         <h1 class="title order__title">закажите доставку</h1>
@@ -575,7 +598,8 @@
                     </div>
                 </section>
                 <section class="map">
-                    <img src="./img/map/map.png" alt="map" class="map__img"></img>
+                    <!-- <img src="./img/map/map.png" alt="map" class="map__img"></img> -->
+                    <div id="map" class="map__loc"></div>
                     <footer class="footer">
                         <div class="footer__container">
                             <address class="contacts contacts--footer">
@@ -681,12 +705,16 @@
         </script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         <script src="./js/menu.js"></script>
         <script src="./js/team.js"></script>
         <script src="./js/reviews.js"></script>
         <script src="./js/choose.js"></script>
         <script src="./js/form.js"></script>
         <script src="./js/colors.js"></script>
+        <script src="./js/player.js"></script>
+        <script src="./js/map.js"></script>
     </div>
 </body>
 

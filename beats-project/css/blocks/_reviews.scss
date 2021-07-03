@@ -2,6 +2,12 @@
     padding-top: rem(64px);
     padding-bottom: rem(64px);
 
+    &__title {
+        @include tablets {
+            color: black;
+        }
+    }
+
     &__container {
         width: 95%;
         max-width: $containerwidth;

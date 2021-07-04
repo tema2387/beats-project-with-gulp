@@ -23,13 +23,17 @@
                     </a>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Наушники</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Цвета</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                            <li class="menu__item"><a href="#" data-scroll-to="description" class="menu__link">О нас</a>
+                            </li>
+                            <li class="menu__item"><a href="#" data-scroll-to="choose" class="menu__link">Наушники</a>
+                            </li>
+                            <li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+                            <li class="menu__item"><a href="#" data-scroll-to="colors" class="menu__link">Цвета</a></li>
+                            <li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item"><a href="#" data-scroll-to="player-section" class="menu__link">Как мы
+                                    работаем</a></li>
+                            <li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
                         </ul>
                     </nav>
                     <address class="contacts contacts--header">
@@ -39,14 +43,14 @@
                 </div>
             </header>
             <main class="main-content">
-                <section class="presentation">
+                <section data-sidemenu-theme="grey" data-section-id="presentation" class="presentation">
                     <div class="presentation__container">
                         <div class="presentation__content">
                             <h1 class="title presentation__title">Беспроводные наушники Beats Solo 3</h1>
                             <p class="presentation__subtitle">Встречайте новую версию наушников
                                 из линейки Powerbeats.</p>
                             <div class="presentation__button">
-                                <a href="#" class="button">Заказать</a>
+                                <a href="#" data-scroll-to="order" class="button">Заказать</a>
                             </div>
                             <div class="features">
                                 <ul class="features__list">
@@ -79,7 +83,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="description">
+                <section data-sidemenu-theme="grey" data-section-id="description" class="description">
                     <div class="description__container">
                         <div class="description__content">
                             <h1 class="title description__content-title">почему beats solo 3?</h1>
@@ -131,7 +135,7 @@
                             </ul>
                         </div>
                 </section>
-                <section class="choose">
+                <section data-sidemenu-theme="grey" data-section-id="choose" class="choose">
                     <div class="choose__container">
                         <div class="choose__controls">
                             <a href="" class="choose__control-left choose__control-left--prev">
@@ -222,7 +226,8 @@
                                         </div>
                                         <div class="choose__order">
                                             <div class="choose__order-price">14 990 ₽</div>
-                                            <a href="#" class="button choose__order-button">Заказать</a>
+                                            <a href="#" data-scroll-to="order"
+                                                class="button choose__order-button">Заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -305,7 +310,8 @@
                                         </div>
                                         <div class="choose__order">
                                             <div class="choose__order-price">14 990 ₽</div>
-                                            <a href="#" class="button choose__order-button">Заказать</a>
+                                            <a href="#" data-scroll-to="order"
+                                                class="button choose__order-button">Заказать</a>
                                         </div>
                                     </div>
                                 </li>
@@ -313,7 +319,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="team">
+                <section data-sidemenu-theme="grey" data-section-id="team" class="team">
                     <div class="team__container">
                         <h1 class="title team__title">команда</h1>
                         <ul class="team__list">
@@ -369,7 +375,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="colors">
+                <section data-sidemenu-theme="white" data-section-id="colors" class="colors">
                     <h1 class="title colors__title">цвета</h1>
                     <ul class="colors__list">
                         <li class="colors__item">
@@ -416,7 +422,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="reviews">
+                <section data-sidemenu-theme="grey" data-section-id="reviews" class="reviews">
                     <div class="reviews__container">
                         <h1 class="title reviews__title">отзывы</h1>
                         <ul class="reviews__list">
@@ -485,7 +491,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="player-section">
+                <section data-sidemenu-theme="grey" data-section-id="player-section" class="player-section">
                     <div class="player__container">
                         <h2 class="title player__title">Как мы работаем</h2>
                         <div class="player-section__container">
@@ -508,7 +514,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="order">
+                <section data-sidemenu-theme="white" data-section-id="order" class="order">
                     <div class="order__container">
                         <h1 class="title order__title">закажите доставку</h1>
                         <form class="form">
@@ -597,7 +603,7 @@
                         </form>
                     </div>
                 </section>
-                <section class="map">
+                <section data-sidemenu-theme="grey" data-section-id="map" class="map">
                     <!-- <img src="./img/map/map.png" alt="map" class="map__img"></img> -->
                     <div id="map" class="map__loc"></div>
                     <footer class="footer">
@@ -646,39 +652,39 @@
         <nav class="pagination">
             <ul class="pagination__list">
                 <li class="pagination__item pagination__item--active">
-                    <a href="" class="pagination__link ">
+                    <a href="" data-scroll-to="presentation" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="description" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="choose" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="team" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="colors" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="reviews" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="player-section" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="order" class="pagination__link">
                     </a>
                 </li>
                 <li class="pagination__item">
-                    <a href="" class="pagination__link">
+                    <a href="" data-scroll-to="map" class="pagination__link">
                     </a>
                 </li>
             </ul>
@@ -715,6 +721,7 @@
         <script src="./js/colors.js"></script>
         <script src="./js/player.js"></script>
         <script src="./js/map.js"></script>
+        <script src="./js/pagination.js"></script>
     </div>
 </body>
 

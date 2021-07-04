@@ -79,12 +79,17 @@ textarea {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100%;
 }
 
 .wrapper__content {
   height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 main {
@@ -99,6 +104,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header {
+  height: 0;
 }
 
 /* header */
@@ -1769,7 +1778,7 @@ section {
 }
 @media screen and (max-width: 480px) {
   .footer {
-    top: 88%;
+    top: 81%;
   }
 }
 .footer__container {
@@ -1940,7 +1949,6 @@ section {
   border: 0.0625rem solid transparent;
   border-radius: 50%;
   position: relative;
-  opacity: 0.6;
 }
 .pagination .pagination__link:before {
   content: "";
@@ -1954,6 +1962,11 @@ section {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+.pagination .pagination__link--colors:before {
+  background: #fff;
+  opacity: 1;
 }
 
 /* modal */

@@ -36,7 +36,6 @@
         border: rem(1px) solid transparent;
         border-radius: 50%;
         position: relative;
-        opacity: 0.6;
 
         &:before {
             content: "";
@@ -48,7 +47,15 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
+            opacity: 0.6;
+        }
+    }
+
+    .pagination__link--colors {
+        &:before {
+            background: #fff;
+            opacity: 1;
         }
     }
 }

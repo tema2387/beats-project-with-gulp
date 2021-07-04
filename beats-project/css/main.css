@@ -338,9 +338,7 @@ header {
 
 /* section presentation */
 .presentation {
-  padding-top: 5.375rem;
   background: #F5F5F5;
-  padding-bottom: 5.375rem;
 }
 @media screen and (max-width: 768px) {
   .presentation__content {
@@ -517,10 +515,6 @@ header {
 }
 
 /* section description */
-.description {
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
-}
 .description__container {
   width: 95%;
   max-width: 940px;
@@ -662,8 +656,6 @@ header {
 /* section choose */
 .choose {
   background: #F5F5F5;
-  padding-top: 4.125rem;
-  padding-bottom: 5.875rem;
 }
 .choose__container {
   width: 95%;
@@ -1186,10 +1178,6 @@ header {
 }
 
 /* section reviews */
-.reviews {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
 @media screen and (max-width: 768px) {
   .reviews__title {
     color: black;
@@ -1496,8 +1484,6 @@ header {
 /* section order */
 .order {
   background: #181818;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 .order__container {
   width: 95%;
@@ -1756,7 +1742,13 @@ header {
 
 /* section map */
 .map {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .map__img {
   width: 100%;
@@ -1771,10 +1763,8 @@ header {
 /* footer */
 .footer {
   padding: 1.25rem 0rem 1.25rem 0rem;
-  position: absolute;
   background: #fff;
   width: 100%;
-  top: 92%;
 }
 @media screen and (max-width: 480px) {
   .footer {

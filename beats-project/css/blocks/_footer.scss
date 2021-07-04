@@ -1,9 +1,9 @@
 .footer {
     padding: rem(20px) rem(0px) rem(20px) rem(0px);
-    position: absolute;
+    // position: absolute;
     background: #fff;
     width: 100%;
-    top: 92%;
+    // top: 92%;
 
     @include phones {
         top: 81%;

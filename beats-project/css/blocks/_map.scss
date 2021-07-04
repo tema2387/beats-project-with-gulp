@@ -1,5 +1,7 @@
 .map {
-    position: relative;
+    // position: relative;
+    display: flex;
+    flex-direction: column;
 
     &__img {
         width: 100%;

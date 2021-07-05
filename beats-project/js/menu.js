@@ -1,8 +1,7 @@
 const openButton = document.querySelector (".hamburger");
 const closeButton = document.querySelector (".close-button");
-const menu = document.querySelector (".menu");
-let item = document.querySelectorAll(".menu__item");
-
+const menu = document.querySelector (".tablets-menu");
+let item = document.querySelectorAll(".tablets-menu__item");
 
 openButton.addEventListener ("click", e => {
     e.preventDefault();
@@ -11,13 +10,13 @@ openButton.addEventListener ("click", e => {
     openButton.style.display = ("none");
 })
 
-for (let i = 0; i< item.length; i++) {
-item[i].addEventListener ("click", e => {
-    e.preventDefault();
-    menu.style.display = ("none");
-    closeButton.style.display = ("none");
-    openButton.style.display = ("flex");
-})
+for (let i = 0; i < item.length; i++) {
+    item[i].addEventListener ("click", e => {
+        e.preventDefault();
+        menu.style.display = ("none");
+        closeButton.style.display = ("none");
+        openButton.style.display = ("flex");
+    })
 }
 
 closeButton.addEventListener ("click", e => {
@@ -26,3 +25,4 @@ closeButton.addEventListener ("click", e => {
     closeButton.style.display = ("none");
     openButton.style.display = ("flex");
 })
+

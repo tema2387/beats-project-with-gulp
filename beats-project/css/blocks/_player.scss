@@ -111,7 +111,7 @@
     .player__start {
         width: 15px;
         height: 18px;
-        background: url(../img/player/pause.png) no-repeat;
+        background: url(../img/player/pause3.svg) no-repeat;
     }
 }
 
@@ -138,6 +138,7 @@
 .player__duration {
     margin-left: rem(27px);
     flex: 1 1 1;
+    color: white;
 }
 
 

@@ -138,21 +138,6 @@ header {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: fixed;
-    background: #313131;
-    margin: 0px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    z-index: 10000;
   }
 }
 .menu__list {
@@ -168,55 +153,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 .menu__item {
   margin-right: 1.6875rem;
 }
-@media screen and (max-width: 768px) {
-  .menu__item {
-    margin-right: 0rem;
-    margin-top: 0.625rem;
-  }
-  .menu__item:first-child {
-    margin-top: 0rem;
-  }
-}
-.menu__item:last-child {
-  margin-right: 0rem;
-}
 .menu__link {
   white-space: nowrap;
-}
-@media screen and (max-width: 768px) {
-  .menu__link {
-    color: white;
-    font-size: 36px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .menu__link {
-    color: white;
-    font-size: 36px;
-  }
-}
-
-.close-button {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .close-button {
-    position: fixed;
-    top: 4%;
-    right: 2%;
-    z-index: 10000;
-  }
 }
 
 .contacts {
@@ -302,20 +243,22 @@ header {
 }
 
 /* hamburger */
-.hamburger {
-  width: 26px;
-  height: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: none;
-  position: fixed;
-  top: 4%;
-  right: 2%;
+@media screen and (max-width: 768px) {
+  .hamburger {
+    width: 26px;
+    height: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: none;
+    position: fixed;
+    top: 4%;
+    right: 2%;
+  }
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -1143,6 +1086,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .colors__name {
+    width: 4.375rem;
+  }
+}
 .colors__name-text {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -1441,7 +1389,7 @@ header {
 .paused .player__start {
   width: 15px;
   height: 18px;
-  background: url(../img/player/pause.png) no-repeat;
+  background: url(../img/player/pause3.svg) no-repeat;
 }
 
 .player__playback {
@@ -1475,6 +1423,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 1;
           flex: 1 1 1;
+  color: white;
 }
 
 .player--active .player__splash {
@@ -2015,4 +1964,73 @@ header {
   text-align: center;
   color: red;
   font-size: 18px;
+}
+
+/*tablets-menu */
+.tablets-menu {
+  font-family: "alegreya", Helvetica, sans-serif;
+  font-size: 1.125rem;
+  margin: 0px 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  background: #313131;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 10000;
+  display: none;
+}
+
+.tablets-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tablets-menu__item {
+  margin-top: 0.625rem;
+}
+.tablets-menu__item:first-child {
+  margin-top: 0rem;
+}
+
+.tablets-menu__link {
+  white-space: nowrap;
+  color: white;
+  font-size: 36px;
+}
+
+.close-button {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .close-button {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    z-index: 10000;
+  }
 }

@@ -1430,6 +1430,64 @@ header {
   height: 0;
 }
 
+.sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.6875rem;
+}
+
+.sound__btn {
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sound__mic {
+  width: 0.8125rem;
+  height: 1.0625rem;
+}
+
+.sound__volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+.sound__length {
+  width: 3.8125rem;
+  height: 0.3125rem;
+  cursor: pointer;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 0.3125rem;
+  background: #E01F3D;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 15px;
+  background: #E01F3D;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
 /* section order */
 .order {
   background: #181818;

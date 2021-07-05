@@ -1,5 +1,7 @@
 let player;
 const playerContainer = $(".player");
+const sound = $(".sound__btn");
+const soundline = $(".sound__length");
 
 let eventsInit = () => {
     $(".player__start").click(e => {
@@ -30,6 +32,21 @@ let eventsInit = () => {
 
     $(".player__splash").click (e => {
         player.playVideo();
+    })
+
+    $(".sound__btn").click (e => {
+        if(playerContainer.hasClass("paused")) {
+            if(sound.hasClass("sound--active")) {
+                player.mute();
+                sound.removeClass("sound--active");
+            } else {
+                sound.addClass("sound--active");
+                player.unMute();
+            }
+        }
+    })
+
+    $(".sound__length").click (e => {
     })
 };
 
@@ -81,11 +98,13 @@ const onPlayerStateChange = event => {
         case 1:
             playerContainer.addClass("player--active");
             playerContainer.addClass("paused");
+            sound.addClass("sound--active");
         break;
     
         case 2:
             playerContainer.removeClass("player--active");
             playerContainer.removeClass("paused");
+            sound.removeClass("sound--active");
         break;
     }
 };
